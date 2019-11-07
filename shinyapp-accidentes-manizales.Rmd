@@ -1,0 +1,136 @@
+---
+title: "Shiny apps para accidentes"
+subtitle: "None"
+author: "Orlando Sabogal"
+date: "2019/11 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "SomeStyles.css"]
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: inverse, bottom, right
+
+<h1 align="center"> Shiny app para reducir accidentes de tráfico </h1>
+
+<br> <br> <br> <br>
+
+<h3> Medellín - Noviembre 2019 </h3>
+
+<hr width = 300, align = "right">
+
+<p> 
+  <a href="https://orlando-sabogal.github.io/">Orlando Sabogal</a> 
+  -
+  <a href="https://twitter.com/AntonioSabogal">@AntonioSabogal</a> 
+  -
+  <a href="https://github.com/orlando-sabogal">Github</a> 
+<p>
+
+???
+This is the first silde
+Introduce myself
+
+---
+class: inverse, center, middle
+#El Problema
+
+---
+
+#Una parte de un todo
+
+<br/>
+- Entre enero y septiembre del 2019: 4761 muertes
+- 51 fallecidos en Manizales durante el 2018.
+- Este año van 27.
+
+### Se desarrolló una Metodología
+### Había que hacer una "herramienta computacional"
+
+---
+class: inverse, center, middle
+#¿Usar Shiny?
+
+---
+.pull-left[
+
+###Enfoque web development
+
+- Un ejemplo [básico](https://observablehq.com/@orlando-sabogal/mobility-patterns-i) con [antecedente](https://sirius.utp.edu.co/its/visualization/lineas-deseo/)
+- Mucho más flexible y poderoso.<sup>*</sup>
+- HTML + CSS + JS + typescript
+- Node.js, react.js, vue.js
+- librerías: leaflet y D3. 
+- Muchas tecnologías. 
+- Difícil de mantener. 
+- Más tiempo y más dinero. 
+- Todo evoluciona muy rápido.
+- Hace mucho no uso este tipo de tecnologías.
+
+]
+
+.pull-right[
+
+###The Shiny Way
+
+- Relativamente fácil de usar. 
+- Hasta hace poco, **muy limitado.**
+- Con los servcios de RSTUDIO, es fácil hacer el deployment. 
+- Enfocado a los datos: **ingeniería de datos.**
+- Cierta consistencia.
+- Se puede traer HTML + CSS + JS.
+- Menores tiempos y menores costos. 
+- Hace mucho no construía una *Shiny App*, pero uso R todos los días.
+- Podía ver la evolución de Shiny. 
+- No era clara la viabilidad. El desarrollo no era orientado a *datos.*
+]
+
+.footnote[[*] Por ahora...]
+
+---
+class: inverse, center, middle
+#El Resultado
+Ver la [app](https://antoniosabogal.shinyapps.io/Accidentalidad/)
+
+
+
+---
+class: inverse, center, middle
+#Conclusiones
+
+---
+
+#Algunas cosas que encontré
+<br/>
+--
+Muchas nuevas librerías: <br> </br>
+shinyjs, shinyjqui, bs4Dash (RinteRface), etc. <br> </br>
+**r2d3**: Creo que esto abre caminos que no se han explorado. <br> </br>
+--
+Cada vez se hace más complejo y cada vez se le agregan más cosas <br> </br>
+--
+Un campo de especialización. Veo profesionales dedicados únicamente a hacer shiny apps. <br> </br>
+--
+Un nuevo tipo de desarrollo web, hay que retomar las tecnologías clásicas. <br> </br>
+--
+Todavía falta, pero la cosa pinta muy bien.<br> </br>
+--
+Shiny es una tecnología madura. 
+
+
+---
+class: center, middle
+
+# ¡Gracias!
+
+Diapositivas creadas con la librería [**xaringan**](https://github.com/yihui/xaringan).
+
+Inspirada en [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), y [R Markdown](https://rmarkdown.rstudio.com).
+
+
+
+

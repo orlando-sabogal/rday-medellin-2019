@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Shiny apps para accidentes</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Orlando Sabogal" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="SomeStyles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, bottom, right
+
+&lt;h1 align="center"&gt; Shiny app para reducir accidentes de tráfico &lt;/h1&gt;
+
+&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt;
+
+&lt;h3&gt; Medellín - Noviembre 2019 &lt;/h3&gt;
+
+&lt;hr width = 300, align = "right"&gt;
+
+&lt;p&gt; 
+  &lt;a href="https://orlando-sabogal.github.io/"&gt;Orlando Sabogal&lt;/a&gt; 
+  -
+  &lt;a href="https://twitter.com/AntonioSabogal"&gt;@AntonioSabogal&lt;/a&gt; 
+  -
+  &lt;a href="https://github.com/orlando-sabogal"&gt;Github&lt;/a&gt; 
+&lt;p&gt;
+
+???
+This is the first silde
+Introduce myself
+
+---
+class: inverse, center, middle
+#El Problema
+
+---
+
+#Una parte de un todo
+
+&lt;br/&gt;
+- Entre enero y septiembre del 2019: 4761 muertes
+- 51 fallecidos en Manizales durante el 2018.
+- Este año van 27.
+
+### Se desarrolló una Metodología
+### Había que hacer una "herramienta computacional"
+
+---
+class: inverse, center, middle
+#¿Usar Shiny?
+
+---
+.pull-left[
+
+###Enfoque web development
+
+- Un ejemplo [básico](https://observablehq.com/@orlando-sabogal/mobility-patterns-i) con [antecedente](https://sirius.utp.edu.co/its/visualization/lineas-deseo/)
+- Mucho más flexible y poderoso.&lt;sup&gt;*&lt;/sup&gt;
+- HTML + CSS + JS + typescript
+- Node.js, react.js, vue.js
+- librerías: leaflet y D3. 
+- Muchas tecnologías. 
+- Difícil de mantener. 
+- Más tiempo y más dinero. 
+- Todo evoluciona muy rápido.
+- Hace mucho no uso este tipo de tecnologías.
+
+]
+
+.pull-right[
+
+###The Shiny Way
+
+- Relativamente fácil de usar. 
+- Hasta hace poco, **muy limitado.**
+- Con los servcios de RSTUDIO, es fácil hacer el deployment. 
+- Enfocado a los datos: **ingeniería de datos.**
+- Cierta consistencia.
+- Se puede traer HTML + CSS + JS.
+- Menores tiempos y menores costos. 
+- Hace mucho no construía una *Shiny App*, pero uso R todos los días.
+- Podía ver la evolución de Shiny. 
+- No era clara la viabilidad. El desarrollo no era orientado a *datos.*
+]
+
+.footnote[[*] Por ahora...]
+
+---
+class: inverse, center, middle
+#El Resultado
+Ver la [app](https://antoniosabogal.shinyapps.io/Accidentalidad/)
+
+
+
+---
+class: inverse, center, middle
+#Conclusiones
+
+---
+
+#Algunas cosas que encontré
+&lt;br/&gt;
+--
+Muchas nuevas librerías: &lt;br&gt; &lt;/br&gt;
+shinyjs, shinyjqui, bs4Dash (RinteRface), etc. &lt;br&gt; &lt;/br&gt;
+**r2d3**: Creo que esto abre caminos que no se han explorado. &lt;br&gt; &lt;/br&gt;
+--
+Cada vez se hace más complejo y cada vez se le agregan más cosas &lt;br&gt; &lt;/br&gt;
+--
+Un campo de especialización. Veo profesionales dedicados únicamente a hacer shiny apps. &lt;br&gt; &lt;/br&gt;
+--
+Un nuevo tipo de desarrollo web, hay que retomar las tecnologías clásicas. &lt;br&gt; &lt;/br&gt;
+--
+Todavía falta, pero la cosa pinta muy bien.&lt;br&gt; &lt;/br&gt;
+--
+Shiny es una tecnología madura. 
+
+
+---
+class: center, middle
+
+# ¡Gracias!
+
+Diapositivas creadas con la librería [**xaringan**](https://github.com/yihui/xaringan).
+
+Inspirada en [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), y [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
